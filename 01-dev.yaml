@@ -1,0 +1,22 @@
+type: environment.insomnia.rest/5.0
+schema_version: "5.1"
+name: 01-DEV
+meta:
+  id: wrk_87dd14da0b7b4e129b8a239e65ba78cc
+  created: 1784122086649
+  modified: 1784122086649
+  description: ""
+environments:
+  name: Base Environment
+  meta:
+    id: env_2601fae94a07e61cfbfd680144ee5e576e5f10f9
+    created: 1784122086662
+    modified: 1784898466985
+    isPrivate: false
+  data:
+    base_url: http://wzlxdpip01.worldbank.org
+    release: 20260401_TEST
+    ppp: 2021
+    poverty_line: 2.15
+    pop_share_threshold: 0.01
+    pip_id: COL_2008_GEIH_INC_ALL

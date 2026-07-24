@@ -1,0 +1,182 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: tablemaker_test
+meta:
+  id: wrk_5dced95482ea402ba5c5c56cd9b0aa39
+  created: 1784123539723
+  modified: 1784123539723
+  description: ""
+collection:
+  - url: "{{ base_url }}/health"
+    name: health-check
+    meta:
+      id: req_1a7de37f20ab4e78b55c002b9d1a2d27
+      created: 1784123545784
+      modified: 1784125445587
+      isPrivate: false
+      description: ""
+      sortKey: -1784123545784
+    method: GET
+    scripts:
+      afterResponse: |
+        const { expect } = require('chai');
+
+        const response = await insomnia.send();
+
+        // 1. Status code is 200
+        expect(response.status).to.equal(200);
+
+        // 2. Response body has status = "success"
+        const body = response.jsonBody();
+        expect(body).to.have.property("status");
+        expect(body.status).to.equal("success");
+
+        // 3. Response has a data.release field and it's not empty
+        expect(body).to.have.property("data");
+        expect(body.data).to.have.property("release");
+        expect(body.data.release).to.be.a("string");
+        expect(body.data.release.length).to.be.above(0);
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ base_url }}/releases"
+    name: releases
+    meta:
+      id: req_cc8e03d8bdc34cf58048a6aeebd6c4f3
+      created: 1784227073232
+      modified: 1784228151816
+      isPrivate: false
+      description: ""
+      sortKey: -1784227073232
+    method: GET
+    scripts:
+      afterResponse: |
+        const { expect } = require('chai');
+
+        const response = await insomnia.send();
+
+        // 1. Status code is 200
+        expect(response.status).to.equal(200);
+
+        const body = response.jsonBody();
+
+        // 2. Response has status = "success"
+        expect(body.status).to.equal("success");
+
+        // 3. data.releases is a non-empty array
+        expect(body.data).to.have.property("releases");
+        expect(body.data.releases).to.be.an("array");
+        expect(body.data.releases.length).to.be.above(0);
+
+        // 4. data.current is a non-empty string
+        expect(body.data).to.have.property("current");
+        expect(body.data.current).to.be.a("string");
+        expect(body.data.current.length).to.be.above(0);
+
+        // 5. The expected DEV release is among the loaded releases
+        const env = insomnia.environment.get("release");
+        expect(body.data.releases).to.include(env);
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ base_url }}/table"
+    name: table - happy path
+    meta:
+      id: req_ce468a4e95d540c195fd5d468bf8aa29
+      created: 1784229357093
+      modified: 1784229779608
+      isPrivate: false
+      description: ""
+      sortKey: -1784229357093
+    method: GET
+    parameters:
+      - name: pip_id
+        value: ARG_2017_EPHC-S2_INC_ALL
+        description: ""
+        disabled: false
+      - name: analysis_var
+        value: welfare
+        description: ""
+        disabled: false
+      - name: ppp
+        value: "{{ ppp }}"
+        description: ""
+        disabled: false
+      - name: release
+        value: "{{ release }}"
+        description: ""
+        disabled: false
+    scripts:
+      afterResponse: |
+        const { expect } = require('chai');
+
+        const response = await insomnia.send();
+
+        // 1. Status code is 200
+        expect(response.status).to.equal(200);
+
+        const body = response.jsonBody();
+
+        // 2. Response envelope is correct
+        expect(body.status).to.equal("success");
+        expect(body).to.have.property("data");
+        expect(body).to.have.property("warnings");
+        expect(body).to.have.property("errors");
+        expect(body).to.have.property("meta");
+
+        // 3. Data is a non-empty array
+        expect(body.data).to.be.an("array");
+        expect(body.data.length).to.be.above(0);
+
+        // 4. Each row has the expected columns
+        const row = body.data[0];
+        expect(row).to.have.property("pip_id");
+        expect(row).to.have.property("country_code");
+        expect(row).to.have.property("surveyid_year");
+        expect(row).to.have.property("welfare_type");
+        expect(row).to.have.property("measure");
+        expect(row).to.have.property("value");
+        expect(row).to.have.property("population");
+
+        // 5. pip_id matches what we requested
+        expect(row.pip_id).to.equal("ARG_2017_EPHC-S2_INC_ALL");
+
+        // 6. Both requested measures are present in the response
+        const measures = body.data.map(r => r.measure);
+        expect(measures).to.include("mean");
+        expect(measures).to.include("median");
+
+        // 7. Meta contains release
+        expect(body.meta).to.have.property("release");
+        expect(body.meta.release).to.equal("20260401_TEST");
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_4bbc19a5421992ce97fde1fc1399e5090cbc2b59
+    created: 1784123539763
+    modified: 1784123539763
+environments:
+  name: Base Environment
+  meta:
+    id: env_4bbc19a5421992ce97fde1fc1399e5090cbc2b59
+    created: 1784123539746
+    modified: 1784123539746
+    isPrivate: false
