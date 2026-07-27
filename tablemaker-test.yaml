@@ -1,0 +1,1616 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: tablemaker-test
+meta:
+  id: wrk_fd1fb3bc7d414069bdeae20cc4f1865b
+  created: 1785155853103
+  modified: 1785155853103
+  description: ""
+collection:
+  - name: Health & Info
+    meta:
+      id: fld_3595babe36c74486869a6ba80bfbb1a5
+      created: 1785155876087
+      modified: 1785155876087
+      sortKey: -1785155876087
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/health"
+        name: GET /health
+        meta:
+          id: req_a747efa961a64f2dafb9a10d0183546c
+          created: 1785155876102
+          modified: 1785155876102
+          isPrivate: false
+          description: Confirms the API is up. Always run this first.
+          sortKey: -1785155876102
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/releases"
+        name: GET /releases
+        meta:
+          id: req_e0da08e59ab3430eaece9334f3d92f8a
+          created: 1785155876103
+          modified: 1785155876103
+          isPrivate: false
+          description: Lists all loaded releases and flags the current one.
+          sortKey: -1785155876103
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Catalogue
+    meta:
+      id: fld_c16d381da22f4d719d20eff1bdb7e13d
+      created: 1785155876090
+      modified: 1785155876090
+      sortKey: -1785155876090
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/surveys"
+        name: GET /surveys
+        meta:
+          id: req_c801a975909941c6935e8ac73ca4c4a7
+          created: 1785155876105
+          modified: 1785155876105
+          isPrivate: false
+          description: Full survey manifest. Grab pip_id values from here for /table and
+            /lookup.
+          sortKey: -1785155876105
+        method: GET
+        parameters:
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/surveys-ui"
+        name: GET /surveys-ui
+        meta:
+          id: req_8c181cc085c94cbebb058c0101364e9a
+          created: 1785155876122
+          modified: 1785155876122
+          isPrivate: false
+          description: ""
+          sortKey: -1785155876122
+        method: GET
+        parameters:
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/countries"
+        name: GET /countries
+        meta:
+          id: req_3345dba670334e7fae37cd217cfdb8aa
+          created: 1785155876124
+          modified: 1785155876124
+          isPrivate: false
+          description: ""
+          sortKey: -1785155876124
+        method: GET
+        parameters:
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/regions"
+        name: GET /regions
+        meta:
+          id: req_d5da16f53a3a4db899869eeaf9a63a1a
+          created: 1785155876125
+          modified: 1785155876125
+          isPrivate: false
+          description: ""
+          sortKey: -1785155876125
+        method: GET
+        parameters:
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/dimensions"
+        name: GET /dimensions
+        meta:
+          id: req_e6776021186c47c6a7017491d947b0aa
+          created: 1785155876126
+          modified: 1785155876126
+          isPrivate: false
+          description: ""
+          sortKey: -1785155876126
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/statistics"
+        name: GET /statistics
+        meta:
+          id: req_3b1e99ae09ed4e49a203d30492053116
+          created: 1785155876128
+          modified: 1785155876128
+          isPrivate: false
+          description: ""
+          sortKey: -1785155876128
+        method: GET
+        parameters:
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/analysis-variables"
+        name: GET /analysis-variables
+        meta:
+          id: req_86c7e012e5ef4dac9adcea5f22b880fe
+          created: 1785155876130
+          modified: 1785155876130
+          isPrivate: false
+          description: ""
+          sortKey: -1785155876130
+        method: GET
+        parameters:
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/categories"
+        name: GET /categories
+        meta:
+          id: req_aa2ba649e6e6439586b4783e192a890d
+          created: 1785155876131
+          modified: 1785155876131
+          isPrivate: false
+          description: ""
+          sortKey: -1785155876131
+        method: GET
+        parameters:
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/covariates"
+        name: GET /covariates
+        meta:
+          id: req_c57d5ebf31324cbc9a921650c7dbdddb
+          created: 1785155876133
+          modified: 1785155876133
+          isPrivate: false
+          description: ""
+          sortKey: -1785155876133
+        method: GET
+        parameters:
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Query - Happy Paths
+    meta:
+      id: fld_54011d36e25f49ada90c2237cc2192ed
+      created: 1785155876091
+      modified: 1785155876091
+      sortKey: -1785155876091
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - basic (mean + gini)
+        meta:
+          id: req_f15179f3060a4b0f8fcbe4ef1a0afd02
+          created: 1785155876134
+          modified: 1785155876134
+          isPrivate: false
+          description: Basic table request with mean and gini measures
+          sortKey: -1785155876134
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean,gini
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: pop_share_threshold
+            value: "{{ _.pop_share_threshold }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: POST /table - basic
+        meta:
+          id: req_244d7797de12473fa4c8ab782906bcbe
+          created: 1785155876135
+          modified: 1785155876135
+          isPrivate: false
+          description: Same as GET but body-encoded. Useful for many pip_ids.
+          sortKey: -1785155876135
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "analysis_var": "welfare",
+              "pip_id": ["{{ _.pip_id }}"],
+              "measures": ["mean", "gini"],
+              "ppp": {{ _.ppp }},
+              "pop_share_threshold": {{ _.pop_share_threshold }},
+              "release": "{{ _.release }}"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Query - Parameter Variants
+    meta:
+      id: fld_19383a81206646f1947614ed889a4ce2
+      created: 1785155876093
+      modified: 1785155876093
+      sortKey: -1785155876093
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - poverty status
+        meta:
+          id: req_59bf668af4b74b2c8a603f9ff94bead0
+          created: 1785155876136
+          modified: 1785155876136
+          isPrivate: false
+          description: analysis_var=pov_status requires poverty_line
+          sortKey: -1785155876136
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: pov_status
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: headcount
+            disabled: false
+          - name: poverty_line
+            value: "{{ _.poverty_line }}"
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: pop_share_threshold
+            value: "{{ _.pop_share_threshold }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - by gender
+        meta:
+          id: req_dc9e4222cdc0420a946dbb60eee839ce
+          created: 1785155876137
+          modified: 1785155876137
+          isPrivate: false
+          description: Tests the 'by' disaggregation parameter
+          sortKey: -1785155876137
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: by
+            value: gender
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: pop_share_threshold
+            value: "{{ _.pop_share_threshold }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - with filter_base
+        meta:
+          id: req_3fb6e97d952440dbaf07a62bfb6215d3
+          created: 1785155876139
+          modified: 1785155876139
+          isPrivate: false
+          description: Tests sample-base filtering. Adjust filter_base keys/values from
+            /categories.
+          sortKey: -1785155876139
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: filter_base
+            value: '{"gender":[1]}'
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: pop_share_threshold
+            value: "{{ _.pop_share_threshold }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - suppression disabled
+        meta:
+          id: req_3c379a7ef2c24b76a12c3537379815de
+          created: 1785155876140
+          modified: 1785155876140
+          isPrivate: false
+          description: Omitting pop_share_threshold disables cell suppression
+          sortKey: -1785155876140
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - by pov_status
+        meta:
+          id: req_542ba403c8a146be9b9f312d32d42df7
+          created: 1785155876145
+          modified: 1785155876145
+          isPrivate: false
+          description: Valid use of pov_status as disaggregation dimension with
+            poverty_line.
+          sortKey: -1785155876145
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: by
+            value: pov_status
+            disabled: false
+          - name: poverty_line
+            value: "{{ _.poverty_line }}"
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - binary analysis shares
+        meta:
+          id: req_57e1fa767d5e4bdc8bb43973fd48866a
+          created: 1785155876146
+          modified: 1785155876146
+          isPrivate: false
+          description: Shares path with binary analysis variable.
+          sortKey: -1785155876146
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: gender
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: pop_share,target_survey_share
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - continuous analysis
+        meta:
+          id: req_b3f9697176084861950def7071ff758c
+          created: 1785155876147
+          modified: 1785155876147
+          isPrivate: false
+          description: Summary stats path with continuous analysis variable.
+          sortKey: -1785155876147
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: age
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean,median
+            disabled: false
+          - name: by
+            value: gender
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - multiple pip_id
+        meta:
+          id: req_2ad7de53a35e4ef4bdabe4254195f4b4
+          created: 1785155876148
+          modified: 1785155876148
+          isPrivate: false
+          description: Vectorized pip_id query parameter (repeatable).
+          sortKey: -1785155876148
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_2 }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - empty pop_share_threshold
+        meta:
+          id: req_57aeff7b71354323ac7f72339d55edba
+          created: 1785155876149
+          modified: 1785155876149
+          isPrivate: false
+          description: Explicit empty threshold should disable suppression.
+          sortKey: -1785155876149
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: pop_share_threshold
+            value: ""
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Query - Error Cases
+    meta:
+      id: fld_67461e3a605c405b94e331894066cef7
+      created: 1785155876096
+      modified: 1785155876096
+      sortKey: -1785155876096
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/table"
+        name: ERR - pov_status missing poverty_line
+        meta:
+          id: req_96157423211c4d79b67c706b1719e5fa
+          created: 1785155876141
+          modified: 1785155876141
+          isPrivate: false
+          description: Expects 400. poverty_line is required when analysis_var=pov_status
+          sortKey: -1785155876141
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: pov_status
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: headcount
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - non-integer ppp
+        meta:
+          id: req_77174c353c9d45acb300c35e3415ade4
+          created: 1785155876143
+          modified: 1785155876143
+          isPrivate: false
+          description: Expects 400. ppp must be a positive whole number
+          sortKey: -1785155876143
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: abc
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - nonexistent pip_id
+        meta:
+          id: req_b16015d4359b44df9476911217ca815b
+          created: 1785155876144
+          modified: 1785155876144
+          isPrivate: false
+          description: Expects 400 with meaningful error, not 500
+          sortKey: -1785155876144
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: DOESNOTEXIST_9999_FAKE_CON_URBAN
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - missing analysis_var
+        meta:
+          id: req_74d79d57eb204b77b460b33477ad613c
+          created: 1785155876151
+          modified: 1785155876151
+          isPrivate: false
+          description: Expects 400. analysis_var is required.
+          sortKey: -1785155876151
+        method: GET
+        parameters:
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - missing pip_id
+        meta:
+          id: req_3f2901f3ee054825aea5387b5e608f04
+          created: 1785155876152
+          modified: 1785155876152
+          isPrivate: false
+          description: Expects 400. pip_id is required.
+          sortKey: -1785155876152
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - missing measures
+        meta:
+          id: req_2cdc85e3a61a41d7b725190ff4912ac5
+          created: 1785155876153
+          modified: 1785155876153
+          isPrivate: false
+          description: Expects 400. measures is required.
+          sortKey: -1785155876153
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - unknown analysis_var
+        meta:
+          id: req_3e5fb066a7fb417e84d64d53d9aa7c22
+          created: 1785155876154
+          modified: 1785155876154
+          isPrivate: false
+          description: Expects 400. analysis_var must be in allowlist.
+          sortKey: -1785155876154
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: unknown_var
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - unknown measure
+        meta:
+          id: req_9b7efd4c0dd8455ca20df72ae5f4eab0
+          created: 1785155876155
+          modified: 1785155876155
+          isPrivate: false
+          description: Expects 400. Unknown measures are rejected.
+          sortKey: -1785155876155
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean,not_a_measure
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - invalid by dimension
+        meta:
+          id: req_f430422f5eef4b34b2b9f0784f070d2e
+          created: 1785155876156
+          modified: 1785155876156
+          isPrivate: false
+          description: Expects 400. Unknown by dimensions are rejected.
+          sortKey: -1785155876156
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: by
+            value: not_a_dimension
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - by pov_status missing poverty_line
+        meta:
+          id: req_3e9266594c4b41b59897503fdd18254e
+          created: 1785155876157
+          modified: 1785155876157
+          isPrivate: false
+          description: Expects 400. poverty_line required when by includes pov_status.
+          sortKey: -1785155876157
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: by
+            value: pov_status
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - poverty_line non-numeric
+        meta:
+          id: req_a163eb2ea33d4fd3b43f3bae8e4547aa
+          created: 1785155876157
+          modified: 1785155876157
+          isPrivate: false
+          description: Expects 400. poverty_line must be numeric.
+          sortKey: -1785155876157
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: pov_status
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: headcount
+            disabled: false
+          - name: poverty_line
+            value: abc
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - poverty_line non-positive
+        meta:
+          id: req_5adc863652b34707b94e589578e20c71
+          created: 1785155876159
+          modified: 1785155876159
+          isPrivate: false
+          description: Expects 400. poverty_line must be > 0.
+          sortKey: -1785155876159
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: pov_status
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: headcount
+            disabled: false
+          - name: poverty_line
+            value: "0"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - invalid pip_id format
+        meta:
+          id: req_df5c9ac89325424787fc6abbccf8de09
+          created: 1785155876160
+          modified: 1785155876160
+          isPrivate: false
+          description: Expects 400. pip_id must match canonical uppercase pattern.
+          sortKey: -1785155876160
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: col_2008_geih_inc_all
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - too many pip_id values
+        meta:
+          id: req_3ab6fee3df594865b04c80105e0cb03c
+          created: 1785155876161
+          modified: 1785155876161
+          isPrivate: false
+          description: Expects 400. More than 15 pip_id values are rejected.
+          sortKey: -1785155876161
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: AAA_2000_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2001_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2002_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2003_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2004_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2005_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2006_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2007_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2008_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2009_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2010_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2011_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2012_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2013_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2014_FAKE_INC_ALL
+            disabled: false
+          - name: pip_id
+            value: AAA_2015_FAKE_INC_ALL
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - ppp zero
+        meta:
+          id: req_6056aca122234834bd6d59e40b498572
+          created: 1785155876163
+          modified: 1785155876163
+          isPrivate: false
+          description: Expects 400. ppp must be positive.
+          sortKey: -1785155876163
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: "0"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - ppp negative
+        meta:
+          id: req_99794413e0584d7fa85667bbc23ddf1a
+          created: 1785155876164
+          modified: 1785155876164
+          isPrivate: false
+          description: Expects 400. ppp must be positive.
+          sortKey: -1785155876164
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: "-1"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - repeated ppp values
+        meta:
+          id: req_88b8248b8d7542b998828e21ea503ef9
+          created: 1785155876165
+          modified: 1785155876165
+          isPrivate: false
+          description: Expects 400. ppp must be a scalar.
+          sortKey: -1785155876165
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: "2017"
+            disabled: false
+          - name: ppp
+            value: "2021"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - pop_share_threshold non-numeric
+        meta:
+          id: req_0ca38e229565463086aef7bfda5f2917
+          created: 1785155876166
+          modified: 1785155876166
+          isPrivate: false
+          description: Expects 400. pop_share_threshold must be numeric in (0,1).
+          sortKey: -1785155876166
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: pop_share_threshold
+            value: abc
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - pop_share_threshold out of range
+        meta:
+          id: req_387d328d4abf4635b9cde194b0694490
+          created: 1785155876167
+          modified: 1785155876167
+          isPrivate: false
+          description: Expects 400. pop_share_threshold must be strictly between 0 and 1.
+          sortKey: -1785155876167
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: pop_share_threshold
+            value: "1"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - malformed filter_base JSON
+        meta:
+          id: req_06304f6430624e4f8343e76a1b225df7
+          created: 1785155876168
+          modified: 1785155876168
+          isPrivate: false
+          description: Expects 422. filter_base JSON parsing fails in handler.
+          sortKey: -1785155876168
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: filter_base
+            value: '{"gender":[1]'
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: ERR - table unknown release
+        meta:
+          id: req_136a81bde7e44d46baf5c33da141a3a9
+          created: 1785155876168
+          modified: 1785155876168
+          isPrivate: false
+          description: Expects 422. resolve_release rejects unknown release.
+          sortKey: -1785155876168
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: release
+            value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: POST /table - missing analysis_var
+        meta:
+          id: req_c102b23ad3be4f14a6542b6c532bd554
+          created: 1785155876169
+          modified: 1785155876169
+          isPrivate: false
+          description: Expects 400. analysis_var required in POST body.
+          sortKey: -1785155876169
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "pip_id": ["{{ _.pip_id }}"],
+              "measures": ["mean"]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: POST /table - malformed JSON
+        meta:
+          id: req_24cb8076d8dd402f911ce1ad71ec6201
+          created: 1785155876170
+          modified: 1785155876170
+          isPrivate: false
+          description: Expects 400. Invalid JSON body should fail request parsing.
+          sortKey: -1785155876170
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "analysis_var": "welfare",
+              "pip_id": ["{{ _.pip_id }}"],
+              "measures": ["mean"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Catalogue - Error Cases
+    meta:
+      id: fld_70e779272a2b43c88ab70e7b4cc92f6c
+      created: 1785155876099
+      modified: 1785155876099
+      sortKey: -1785155876099
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/surveys"
+        name: ERR - /surveys unknown release
+        meta:
+          id: req_58976bb2ac3f444ba3998cb9ffcc5ec0
+          created: 1785155876171
+          modified: 1785155876171
+          isPrivate: false
+          description: Expects 422. resolve_release rejects unknown release.
+          sortKey: -1785155876171
+        method: GET
+        parameters:
+          - name: release
+            value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/surveys-ui"
+        name: ERR - /surveys-ui unknown release
+        meta:
+          id: req_0be704780b794d2cbe9451b69e5ae893
+          created: 1785155876172
+          modified: 1785155876172
+          isPrivate: false
+          description: Expects 422. resolve_release rejects unknown release.
+          sortKey: -1785155876172
+        method: GET
+        parameters:
+          - name: release
+            value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/countries"
+        name: ERR - /countries unknown release
+        meta:
+          id: req_8e176e2bb2524bc29268f7300c936546
+          created: 1785155876173
+          modified: 1785155876173
+          isPrivate: false
+          description: Expects 422. resolve_release rejects unknown release.
+          sortKey: -1785155876173
+        method: GET
+        parameters:
+          - name: release
+            value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/regions"
+        name: ERR - /regions unknown release
+        meta:
+          id: req_6439380d814d48279178a3f0050e6a99
+          created: 1785155876174
+          modified: 1785155876174
+          isPrivate: false
+          description: Expects 422. resolve_release rejects unknown release.
+          sortKey: -1785155876174
+        method: GET
+        parameters:
+          - name: release
+            value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/statistics"
+        name: ERR - /statistics unknown release
+        meta:
+          id: req_544cac5ac75e4a89bbb1dc446a15f08b
+          created: 1785155876175
+          modified: 1785155876175
+          isPrivate: false
+          description: Expects 422. resolve_release rejects unknown release.
+          sortKey: -1785155876175
+        method: GET
+        parameters:
+          - name: release
+            value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/analysis-variables"
+        name: ERR - /analysis-variables unknown release
+        meta:
+          id: req_76b37e31ca5a480894515e8bb8f92a20
+          created: 1785155876176
+          modified: 1785155876176
+          isPrivate: false
+          description: Expects 422. resolve_release rejects unknown release.
+          sortKey: -1785155876176
+        method: GET
+        parameters:
+          - name: release
+            value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/categories"
+        name: ERR - /categories unknown release
+        meta:
+          id: req_59c36d3ebc6240ca8560a4c9c270054c
+          created: 1785155876177
+          modified: 1785155876177
+          isPrivate: false
+          description: Expects 422. resolve_release rejects unknown release.
+          sortKey: -1785155876177
+        method: GET
+        parameters:
+          - name: release
+            value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/covariates"
+        name: ERR - /covariates unknown release
+        meta:
+          id: req_f3a132ee09ba4d229b06ebe3f00fbb41
+          created: 1785155876178
+          modified: 1785155876178
+          isPrivate: false
+          description: Expects 422. resolve_release rejects unknown release.
+          sortKey: -1785155876178
+        method: GET
+        parameters:
+          - name: release
+            value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_ed79f5137526b9d3f8c2ac2926bea06a5b896b33
+    created: 1785155853109
+    modified: 1785155853109
+environments:
+  name: Base Environment
+  meta:
+    id: env_ed79f5137526b9d3f8c2ac2926bea06a5b896b33
+    created: 1785155853108
+    modified: 1785155853108
+    isPrivate: false

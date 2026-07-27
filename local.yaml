@@ -11,7 +11,7 @@ environments:
   meta:
     id: env_9d2d252c9740dc07426fd5e5282338190099a8e1
     created: 1784653241918
-    modified: 1784815447429
+    modified: 1785158672453
     isPrivate: false
   data:
     base_url: http://127.0.0.1:8080
@@ -20,3 +20,6 @@ environments:
     poverty_line: 2.15
     pop_share_threshold: 0.01
     pip_id: COL_2008_GEIH_INC_ALL
+    pip_id_2: ARG_2018_EPHC-S2_INC_ALL
+    pip_id_3: BOL_2005_EH_INC_ALL
+    pip_id_4: COL_2015_GEIH_INC_ALL
