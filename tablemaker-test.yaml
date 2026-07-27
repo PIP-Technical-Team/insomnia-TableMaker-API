@@ -267,7 +267,7 @@ collection:
         meta:
           id: req_f15179f3060a4b0f8fcbe4ef1a0afd02
           created: 1785155876134
-          modified: 1785155876134
+          modified: 1785159629479
           isPrivate: false
           description: Basic table request with mean and gini measures
           sortKey: -1785155876134
@@ -280,7 +280,7 @@ collection:
             value: "{{ _.pip_id }}"
             disabled: false
           - name: measures
-            value: mean,gini
+            value: mean
             disabled: false
           - name: ppp
             value: "{{ _.ppp }}"
@@ -290,6 +290,10 @@ collection:
             disabled: false
           - name: release
             value: "{{ _.release }}"
+            disabled: false
+          - name: measures
+            value: gini
+            description: ""
             disabled: false
         settings:
           renderRequestBody: true
@@ -540,7 +544,7 @@ collection:
         meta:
           id: req_57e1fa767d5e4bdc8bb43973fd48866a
           created: 1785155876146
-          modified: 1785155876146
+          modified: 1785159542621
           isPrivate: false
           description: Shares path with binary analysis variable.
           sortKey: -1785155876146
@@ -553,8 +557,10 @@ collection:
             value: "{{ _.pip_id }}"
             disabled: false
           - name: measures
-            value: pop_share,target_survey_share
+            value: pop_share
             disabled: false
+            type: text
+            multiline: false
           - name: by
             value: area
             disabled: false
@@ -563,6 +569,10 @@ collection:
             disabled: false
           - name: release
             value: "{{ _.release }}"
+            disabled: false
+          - name: measures
+            value: target_survey_share
+            description: ""
             disabled: false
         settings:
           renderRequestBody: true
@@ -577,7 +587,7 @@ collection:
         meta:
           id: req_b3f9697176084861950def7071ff758c
           created: 1785155876147
-          modified: 1785155876147
+          modified: 1785159492791
           isPrivate: false
           description: Summary stats path with continuous analysis variable.
           sortKey: -1785155876147
@@ -590,7 +600,7 @@ collection:
             value: "{{ _.pip_id }}"
             disabled: false
           - name: measures
-            value: mean,median
+            value: mean
             disabled: false
           - name: by
             value: gender
@@ -600,6 +610,10 @@ collection:
             disabled: false
           - name: release
             value: "{{ _.release }}"
+            disabled: false
+          - name: measures
+            value: median
+            description: ""
             disabled: false
         settings:
           renderRequestBody: true
@@ -614,7 +628,7 @@ collection:
         meta:
           id: req_2ad7de53a35e4ef4bdabe4254195f4b4
           created: 1785155876148
-          modified: 1785155876148
+          modified: 1785159388856
           isPrivate: false
           description: Vectorized pip_id query parameter (repeatable).
           sortKey: -1785155876148
@@ -637,6 +651,38 @@ collection:
             disabled: false
           - name: release
             value: "{{ _.release }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_4 }}"
+            description: ""
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_3 }}"
+            description: ""
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_5 }}"
+            description: ""
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_6 }}"
+            description: ""
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_7 }}"
+            description: ""
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_8 }}"
+            description: ""
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_9 }}"
+            description: ""
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_10 }}"
+            description: ""
             disabled: false
         settings:
           renderRequestBody: true

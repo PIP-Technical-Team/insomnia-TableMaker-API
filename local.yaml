@@ -11,15 +11,26 @@ environments:
   meta:
     id: env_9d2d252c9740dc07426fd5e5282338190099a8e1
     created: 1784653241918
-    modified: 1785158672453
+    modified: 1785159257345
     isPrivate: false
   data:
     base_url: http://127.0.0.1:8080
     release: 20260401_TEST
     ppp: 2021
-    poverty_line: 2.15
+    poverty_line: 3
     pop_share_threshold: 0.01
     pip_id: COL_2008_GEIH_INC_ALL
     pip_id_2: ARG_2018_EPHC-S2_INC_ALL
     pip_id_3: BOL_2005_EH_INC_ALL
-    pip_id_4: COL_2015_GEIH_INC_ALL
+    pip_id_4: COL_2020_GEIH_INC_ALL
+    pip_id_5: BRA_2004_PNAD_INC_ALL
+    pip_id_6: ALB_2016_HBS_CON_ALL
+    pip_id_7: PHL_2021_FIES_INC_ALL
+    pip_id_8: CHL_2006_CASEN_INC_ALL
+    pip_id_9: EST_2015_EU-SILC_INC_ALL
+    pip_id_10: ITA_2008_EU-SILC_INC_ALL
+    pip_id_11: SLV_2000_EHPM_INC_ALL
+    pip_id_12: LTU_2009_EU-SILC_INC_ALL
+    pip_id_13: EGY_2012_HIECS_CON_ALL
+    pip_id_14: TUN_2005_NSHBCSL_CON_ALL
+    pip_id_15: URY_2002_ECH_INC_ALL
