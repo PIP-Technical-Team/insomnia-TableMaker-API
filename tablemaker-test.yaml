@@ -9,21 +9,21 @@ meta:
 collection:
   - name: Health & Info
     meta:
-      id: fld_3595babe36c74486869a6ba80bfbb1a5
-      created: 1785155876087
-      modified: 1785155876087
-      sortKey: -1785155876087
+      id: fld_bee4059bfe3e4074a67979b2c3d2594d
+      created: 1785509371437
+      modified: 1785509371437
+      sortKey: -1785509371437
       description: ""
     children:
       - url: "{{ _.base_url }}/health"
         name: GET /health
         meta:
-          id: req_a747efa961a64f2dafb9a10d0183546c
-          created: 1785155876102
-          modified: 1785155876102
+          id: req_827a92a4c00546458bedd9ee52965289
+          created: 1785509371452
+          modified: 1785509371452
           isPrivate: false
           description: Confirms the API is up. Always run this first.
-          sortKey: -1785155876102
+          sortKey: -1785509371452
         method: GET
         settings:
           renderRequestBody: true
@@ -36,12 +36,12 @@ collection:
       - url: "{{ _.base_url }}/releases"
         name: GET /releases
         meta:
-          id: req_e0da08e59ab3430eaece9334f3d92f8a
-          created: 1785155876103
-          modified: 1785155876103
+          id: req_4cbc61b4beae43d59e2d22bbb200ccc0
+          created: 1785509371454
+          modified: 1785509371454
           isPrivate: false
           description: Lists all loaded releases and flags the current one.
-          sortKey: -1785155876103
+          sortKey: -1785509371454
         method: GET
         settings:
           renderRequestBody: true
@@ -53,22 +53,22 @@ collection:
           rebuildPath: true
   - name: Catalogue
     meta:
-      id: fld_c16d381da22f4d719d20eff1bdb7e13d
-      created: 1785155876090
-      modified: 1785155876090
-      sortKey: -1785155876090
+      id: fld_c6a544fa6f6949b698b825c5479dd5b5
+      created: 1785509371439
+      modified: 1785509371439
+      sortKey: -1785509371439
       description: ""
     children:
       - url: "{{ _.base_url }}/surveys"
         name: GET /surveys
         meta:
-          id: req_c801a975909941c6935e8ac73ca4c4a7
-          created: 1785155876105
-          modified: 1785155876105
+          id: req_42553d3a13034f25a8a0cb44276491f8
+          created: 1785509371455
+          modified: 1785509371455
           isPrivate: false
           description: Full survey manifest. Grab pip_id values from here for /table and
             /lookup.
-          sortKey: -1785155876105
+          sortKey: -1785509371455
         method: GET
         parameters:
           - name: release
@@ -85,12 +85,12 @@ collection:
       - url: "{{ _.base_url }}/surveys-ui"
         name: GET /surveys-ui
         meta:
-          id: req_8c181cc085c94cbebb058c0101364e9a
-          created: 1785155876122
-          modified: 1785155876122
+          id: req_002ea25911b94dd38ba1b82e3a641fd5
+          created: 1785509371457
+          modified: 1785509371457
           isPrivate: false
           description: ""
-          sortKey: -1785155876122
+          sortKey: -1785509371457
         method: GET
         parameters:
           - name: release
@@ -107,12 +107,12 @@ collection:
       - url: "{{ _.base_url }}/countries"
         name: GET /countries
         meta:
-          id: req_3345dba670334e7fae37cd217cfdb8aa
-          created: 1785155876124
-          modified: 1785155876124
+          id: req_ff4f2227264f4b998f25e6b17439895f
+          created: 1785509371458
+          modified: 1785509371458
           isPrivate: false
           description: ""
-          sortKey: -1785155876124
+          sortKey: -1785509371458
         method: GET
         parameters:
           - name: release
@@ -129,12 +129,12 @@ collection:
       - url: "{{ _.base_url }}/regions"
         name: GET /regions
         meta:
-          id: req_d5da16f53a3a4db899869eeaf9a63a1a
-          created: 1785155876125
-          modified: 1785155876125
+          id: req_228f55ad7293403fb544aae8dcdb4a95
+          created: 1785509371459
+          modified: 1785509371459
           isPrivate: false
           description: ""
-          sortKey: -1785155876125
+          sortKey: -1785509371459
         method: GET
         parameters:
           - name: release
@@ -151,12 +151,12 @@ collection:
       - url: "{{ _.base_url }}/dimensions"
         name: GET /dimensions
         meta:
-          id: req_e6776021186c47c6a7017491d947b0aa
-          created: 1785155876126
-          modified: 1785155876126
+          id: req_936137ace3754c4ca771207a23486f6c
+          created: 1785509371461
+          modified: 1785509371461
           isPrivate: false
           description: ""
-          sortKey: -1785155876126
+          sortKey: -1785509371461
         method: GET
         settings:
           renderRequestBody: true
@@ -169,12 +169,12 @@ collection:
       - url: "{{ _.base_url }}/statistics"
         name: GET /statistics
         meta:
-          id: req_3b1e99ae09ed4e49a203d30492053116
-          created: 1785155876128
-          modified: 1785155876128
+          id: req_33f9205beb0a46db957f4d8c680eeb50
+          created: 1785509371462
+          modified: 1785509371462
           isPrivate: false
           description: ""
-          sortKey: -1785155876128
+          sortKey: -1785509371462
         method: GET
         parameters:
           - name: release
@@ -191,12 +191,12 @@ collection:
       - url: "{{ _.base_url }}/analysis-variables"
         name: GET /analysis-variables
         meta:
-          id: req_86c7e012e5ef4dac9adcea5f22b880fe
-          created: 1785155876130
-          modified: 1785155876130
+          id: req_1b7d4ae3b8554ca4958d78788b17d8fd
+          created: 1785509371463
+          modified: 1785509371463
           isPrivate: false
           description: ""
-          sortKey: -1785155876130
+          sortKey: -1785509371463
         method: GET
         parameters:
           - name: release
@@ -213,16 +213,24 @@ collection:
       - url: "{{ _.base_url }}/categories"
         name: GET /categories
         meta:
-          id: req_aa2ba649e6e6439586b4783e192a890d
-          created: 1785155876131
-          modified: 1785155876131
+          id: req_4f592dd9cee145b59f01ec8caa0c9520
+          created: 1785509371465
+          modified: 1785510554916
           isPrivate: false
           description: ""
-          sortKey: -1785155876131
+          sortKey: -1785509371465
         method: GET
         parameters:
           - name: release
             value: "{{ _.release }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_7 }}"
+            description: ""
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_11 }}"
+            description: ""
             disabled: false
         settings:
           renderRequestBody: true
@@ -235,16 +243,24 @@ collection:
       - url: "{{ _.base_url }}/covariates"
         name: GET /covariates
         meta:
-          id: req_c57d5ebf31324cbc9a921650c7dbdddb
-          created: 1785155876133
-          modified: 1785155876133
+          id: req_8ac803abe1a44eff8a296626dbdb6bc7
+          created: 1785509371466
+          modified: 1785510525391
           isPrivate: false
           description: ""
-          sortKey: -1785155876133
+          sortKey: -1785509371466
         method: GET
         parameters:
           - name: release
             value: "{{ _.release }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_4 }}"
+            description: ""
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_6 }}"
+            description: ""
             disabled: false
         settings:
           renderRequestBody: true
@@ -256,21 +272,21 @@ collection:
           rebuildPath: true
   - name: Query - Happy Paths
     meta:
-      id: fld_54011d36e25f49ada90c2237cc2192ed
-      created: 1785155876091
-      modified: 1785155876091
-      sortKey: -1785155876091
+      id: fld_0b79ca447a074cc095e306a9886893b7
+      created: 1785509371441
+      modified: 1785509371441
+      sortKey: -1785509371441
       description: ""
     children:
       - url: "{{ _.base_url }}/table"
         name: GET /table - basic (mean + gini)
         meta:
-          id: req_f15179f3060a4b0f8fcbe4ef1a0afd02
-          created: 1785155876134
-          modified: 1785159629479
+          id: req_d2edb0607cc74cafbb1ba5d9ec0bc596
+          created: 1785509371474
+          modified: 1785509371474
           isPrivate: false
           description: Basic table request with mean and gini measures
-          sortKey: -1785155876134
+          sortKey: -1785509371474
         method: GET
         parameters:
           - name: analysis_var
@@ -282,6 +298,9 @@ collection:
           - name: measures
             value: mean
             disabled: false
+          - name: measures
+            value: gini
+            disabled: false
           - name: ppp
             value: "{{ _.ppp }}"
             disabled: false
@@ -290,10 +309,6 @@ collection:
             disabled: false
           - name: release
             value: "{{ _.release }}"
-            disabled: false
-          - name: measures
-            value: gini
-            description: ""
             disabled: false
         settings:
           renderRequestBody: true
@@ -306,12 +321,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: POST /table - basic
         meta:
-          id: req_244d7797de12473fa4c8ab782906bcbe
-          created: 1785155876135
-          modified: 1785155876135
+          id: req_b35da0bd3f4740ceb513220fe1c0eded
+          created: 1785509371476
+          modified: 1785509371476
           isPrivate: false
           description: Same as GET but body-encoded. Useful for many pip_ids.
-          sortKey: -1785155876135
+          sortKey: -1785509371476
         method: POST
         body:
           mimeType: application/json
@@ -337,21 +352,21 @@ collection:
           rebuildPath: true
   - name: Query - Parameter Variants
     meta:
-      id: fld_19383a81206646f1947614ed889a4ce2
-      created: 1785155876093
-      modified: 1785155876093
-      sortKey: -1785155876093
+      id: fld_4debf6a5ac2d40d8b1bf9eed650f954f
+      created: 1785509371445
+      modified: 1785509371445
+      sortKey: -1785509371445
       description: ""
     children:
       - url: "{{ _.base_url }}/table"
         name: GET /table - poverty status
         meta:
-          id: req_59bf668af4b74b2c8a603f9ff94bead0
-          created: 1785155876136
-          modified: 1785155876136
+          id: req_773d91b415464bbb8f91342cdae42e39
+          created: 1785509371477
+          modified: 1785509371477
           isPrivate: false
           description: analysis_var=pov_status requires poverty_line
-          sortKey: -1785155876136
+          sortKey: -1785509371477
         method: GET
         parameters:
           - name: analysis_var
@@ -386,12 +401,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: GET /table - by gender
         meta:
-          id: req_dc9e4222cdc0420a946dbb60eee839ce
-          created: 1785155876137
-          modified: 1785155876137
+          id: req_1c87d7df322747999db51a41accb0053
+          created: 1785509371478
+          modified: 1785509371478
           isPrivate: false
           description: Tests the 'by' disaggregation parameter
-          sortKey: -1785155876137
+          sortKey: -1785509371478
         method: GET
         parameters:
           - name: analysis_var
@@ -426,13 +441,13 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: GET /table - with filter_base
         meta:
-          id: req_3fb6e97d952440dbaf07a62bfb6215d3
-          created: 1785155876139
-          modified: 1785155876139
+          id: req_14fe9b6011f4431bbd8ab94cf1f764fb
+          created: 1785509371479
+          modified: 1785509371479
           isPrivate: false
           description: Tests sample-base filtering. Adjust filter_base keys/values from
             /categories.
-          sortKey: -1785155876139
+          sortKey: -1785509371479
         method: GET
         parameters:
           - name: analysis_var
@@ -467,12 +482,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: GET /table - suppression disabled
         meta:
-          id: req_3c379a7ef2c24b76a12c3537379815de
-          created: 1785155876140
-          modified: 1785155876140
+          id: req_0d019d65fa7742b99868e7b6095d751f
+          created: 1785509371481
+          modified: 1785509371481
           isPrivate: false
           description: Omitting pop_share_threshold disables cell suppression
-          sortKey: -1785155876140
+          sortKey: -1785509371481
         method: GET
         parameters:
           - name: analysis_var
@@ -501,13 +516,13 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: GET /table - by pov_status
         meta:
-          id: req_542ba403c8a146be9b9f312d32d42df7
-          created: 1785155876145
-          modified: 1785155876145
+          id: req_392a2e36fec641d0a96995707b0e76d8
+          created: 1785509371486
+          modified: 1785509371486
           isPrivate: false
           description: Valid use of pov_status as disaggregation dimension with
             poverty_line.
-          sortKey: -1785155876145
+          sortKey: -1785509371486
         method: GET
         parameters:
           - name: analysis_var
@@ -542,12 +557,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: GET /table - binary analysis shares
         meta:
-          id: req_57e1fa767d5e4bdc8bb43973fd48866a
-          created: 1785155876146
-          modified: 1785159542621
+          id: req_59f429c6d6ac41028f1f143a3c79d610
+          created: 1785509371487
+          modified: 1785509371487
           isPrivate: false
           description: Shares path with binary analysis variable.
-          sortKey: -1785155876146
+          sortKey: -1785509371487
         method: GET
         parameters:
           - name: analysis_var
@@ -559,8 +574,9 @@ collection:
           - name: measures
             value: pop_share
             disabled: false
-            type: text
-            multiline: false
+          - name: measures
+            value: target_survey_share
+            disabled: false
           - name: by
             value: area
             disabled: false
@@ -569,10 +585,6 @@ collection:
             disabled: false
           - name: release
             value: "{{ _.release }}"
-            disabled: false
-          - name: measures
-            value: target_survey_share
-            description: ""
             disabled: false
         settings:
           renderRequestBody: true
@@ -585,12 +597,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: GET /table - continuous analysis
         meta:
-          id: req_b3f9697176084861950def7071ff758c
-          created: 1785155876147
-          modified: 1785159492791
+          id: req_5b57bb640c764cfa87ccd65514f04a82
+          created: 1785509371488
+          modified: 1785509371488
           isPrivate: false
           description: Summary stats path with continuous analysis variable.
-          sortKey: -1785155876147
+          sortKey: -1785509371488
         method: GET
         parameters:
           - name: analysis_var
@@ -602,6 +614,9 @@ collection:
           - name: measures
             value: mean
             disabled: false
+          - name: measures
+            value: median
+            disabled: false
           - name: by
             value: gender
             disabled: false
@@ -610,10 +625,6 @@ collection:
             disabled: false
           - name: release
             value: "{{ _.release }}"
-            disabled: false
-          - name: measures
-            value: median
-            description: ""
             disabled: false
         settings:
           renderRequestBody: true
@@ -626,12 +637,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: GET /table - multiple pip_id
         meta:
-          id: req_2ad7de53a35e4ef4bdabe4254195f4b4
-          created: 1785155876148
-          modified: 1785159388856
+          id: req_96e4b983fd7a450da53f7e7e33656580
+          created: 1785509371489
+          modified: 1785509371489
           isPrivate: false
           description: Vectorized pip_id query parameter (repeatable).
-          sortKey: -1785155876148
+          sortKey: -1785509371489
         method: GET
         parameters:
           - name: analysis_var
@@ -652,38 +663,6 @@ collection:
           - name: release
             value: "{{ _.release }}"
             disabled: false
-          - name: pip_id
-            value: "{{ _.pip_id_4 }}"
-            description: ""
-            disabled: false
-          - name: pip_id
-            value: "{{ _.pip_id_3 }}"
-            description: ""
-            disabled: false
-          - name: pip_id
-            value: "{{ _.pip_id_5 }}"
-            description: ""
-            disabled: false
-          - name: pip_id
-            value: "{{ _.pip_id_6 }}"
-            description: ""
-            disabled: false
-          - name: pip_id
-            value: "{{ _.pip_id_7 }}"
-            description: ""
-            disabled: false
-          - name: pip_id
-            value: "{{ _.pip_id_8 }}"
-            description: ""
-            disabled: false
-          - name: pip_id
-            value: "{{ _.pip_id_9 }}"
-            description: ""
-            disabled: false
-          - name: pip_id
-            value: "{{ _.pip_id_10 }}"
-            description: ""
-            disabled: false
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -695,12 +674,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: GET /table - empty pop_share_threshold
         meta:
-          id: req_57aeff7b71354323ac7f72339d55edba
-          created: 1785155876149
-          modified: 1785155876149
+          id: req_d53e1fb067464090ad034f6dff8f0e83
+          created: 1785509371491
+          modified: 1785509371491
           isPrivate: false
           description: Explicit empty threshold should disable suppression.
-          sortKey: -1785155876149
+          sortKey: -1785509371491
         method: GET
         parameters:
           - name: analysis_var
@@ -731,21 +710,21 @@ collection:
           rebuildPath: true
   - name: Query - Error Cases
     meta:
-      id: fld_67461e3a605c405b94e331894066cef7
-      created: 1785155876096
-      modified: 1785155876096
-      sortKey: -1785155876096
+      id: fld_75c8e9d44688455a814b1fa088a4f44b
+      created: 1785509371447
+      modified: 1785509371447
+      sortKey: -1785509371447
       description: ""
     children:
       - url: "{{ _.base_url }}/table"
         name: ERR - pov_status missing poverty_line
         meta:
-          id: req_96157423211c4d79b67c706b1719e5fa
-          created: 1785155876141
-          modified: 1785155876141
+          id: req_ef304d2c490f4f0db69cad36aa4565d6
+          created: 1785509371482
+          modified: 1785509371482
           isPrivate: false
           description: Expects 400. poverty_line is required when analysis_var=pov_status
-          sortKey: -1785155876141
+          sortKey: -1785509371482
         method: GET
         parameters:
           - name: analysis_var
@@ -771,12 +750,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - non-integer ppp
         meta:
-          id: req_77174c353c9d45acb300c35e3415ade4
-          created: 1785155876143
-          modified: 1785155876143
+          id: req_ae662df9e4da4c1092f73c636e748903
+          created: 1785509371483
+          modified: 1785509371483
           isPrivate: false
           description: Expects 400. ppp must be a positive whole number
-          sortKey: -1785155876143
+          sortKey: -1785509371483
         method: GET
         parameters:
           - name: analysis_var
@@ -802,12 +781,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - nonexistent pip_id
         meta:
-          id: req_b16015d4359b44df9476911217ca815b
-          created: 1785155876144
-          modified: 1785155876144
+          id: req_ecda0991d7d1405180f9804ed92790ce
+          created: 1785509371484
+          modified: 1785509371484
           isPrivate: false
           description: Expects 400 with meaningful error, not 500
-          sortKey: -1785155876144
+          sortKey: -1785509371484
         method: GET
         parameters:
           - name: analysis_var
@@ -833,12 +812,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - missing analysis_var
         meta:
-          id: req_74d79d57eb204b77b460b33477ad613c
-          created: 1785155876151
-          modified: 1785155876151
+          id: req_2aa703ab36494f61801e5baac693c139
+          created: 1785509371492
+          modified: 1785509371492
           isPrivate: false
           description: Expects 400. analysis_var is required.
-          sortKey: -1785155876151
+          sortKey: -1785509371492
         method: GET
         parameters:
           - name: pip_id
@@ -858,12 +837,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - missing pip_id
         meta:
-          id: req_3f2901f3ee054825aea5387b5e608f04
-          created: 1785155876152
-          modified: 1785155876152
+          id: req_52e7f002f4b445c9bac4499b18614cd5
+          created: 1785509371493
+          modified: 1785509371493
           isPrivate: false
           description: Expects 400. pip_id is required.
-          sortKey: -1785155876152
+          sortKey: -1785509371493
         method: GET
         parameters:
           - name: analysis_var
@@ -883,12 +862,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - missing measures
         meta:
-          id: req_2cdc85e3a61a41d7b725190ff4912ac5
-          created: 1785155876153
-          modified: 1785155876153
+          id: req_1d6a8ad8a5a443d289aeb0ab0f11442e
+          created: 1785509371495
+          modified: 1785509371495
           isPrivate: false
           description: Expects 400. measures is required.
-          sortKey: -1785155876153
+          sortKey: -1785509371495
         method: GET
         parameters:
           - name: analysis_var
@@ -908,12 +887,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - unknown analysis_var
         meta:
-          id: req_3e5fb066a7fb417e84d64d53d9aa7c22
-          created: 1785155876154
-          modified: 1785155876154
+          id: req_739625a4a097444889a9dfc4e3cea6f3
+          created: 1785509371496
+          modified: 1785509371496
           isPrivate: false
           description: Expects 400. analysis_var must be in allowlist.
-          sortKey: -1785155876154
+          sortKey: -1785509371496
         method: GET
         parameters:
           - name: analysis_var
@@ -936,12 +915,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - unknown measure
         meta:
-          id: req_9b7efd4c0dd8455ca20df72ae5f4eab0
-          created: 1785155876155
-          modified: 1785155876155
+          id: req_0e546d59ea8946d3a07d03b840062de4
+          created: 1785509371497
+          modified: 1785509371497
           isPrivate: false
           description: Expects 400. Unknown measures are rejected.
-          sortKey: -1785155876155
+          sortKey: -1785509371497
         method: GET
         parameters:
           - name: analysis_var
@@ -951,7 +930,10 @@ collection:
             value: "{{ _.pip_id }}"
             disabled: false
           - name: measures
-            value: mean,not_a_measure
+            value: mean
+            disabled: false
+          - name: measures
+            value: not_a_measure
             disabled: false
         settings:
           renderRequestBody: true
@@ -964,12 +946,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - invalid by dimension
         meta:
-          id: req_f430422f5eef4b34b2b9f0784f070d2e
-          created: 1785155876156
-          modified: 1785155876156
+          id: req_aaf9473e095f493e94bfcf63545ae877
+          created: 1785509371498
+          modified: 1785509371498
           isPrivate: false
           description: Expects 400. Unknown by dimensions are rejected.
-          sortKey: -1785155876156
+          sortKey: -1785509371498
         method: GET
         parameters:
           - name: analysis_var
@@ -995,12 +977,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - by pov_status missing poverty_line
         meta:
-          id: req_3e9266594c4b41b59897503fdd18254e
-          created: 1785155876157
-          modified: 1785155876157
+          id: req_598bf5958d9a418aad8ef26ebea48924
+          created: 1785509371499
+          modified: 1785509371499
           isPrivate: false
           description: Expects 400. poverty_line required when by includes pov_status.
-          sortKey: -1785155876157
+          sortKey: -1785509371499
         method: GET
         parameters:
           - name: analysis_var
@@ -1026,12 +1008,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - poverty_line non-numeric
         meta:
-          id: req_a163eb2ea33d4fd3b43f3bae8e4547aa
-          created: 1785155876157
-          modified: 1785155876157
+          id: req_93ded463eeee454f8ade16af0d17b66e
+          created: 1785509371501
+          modified: 1785509371501
           isPrivate: false
           description: Expects 400. poverty_line must be numeric.
-          sortKey: -1785155876157
+          sortKey: -1785509371501
         method: GET
         parameters:
           - name: analysis_var
@@ -1057,12 +1039,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - poverty_line non-positive
         meta:
-          id: req_5adc863652b34707b94e589578e20c71
-          created: 1785155876159
-          modified: 1785155876159
+          id: req_29d86c47526c4724a8c42e92c65398ae
+          created: 1785509371502
+          modified: 1785509371502
           isPrivate: false
           description: Expects 400. poverty_line must be > 0.
-          sortKey: -1785155876159
+          sortKey: -1785509371502
         method: GET
         parameters:
           - name: analysis_var
@@ -1088,12 +1070,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - invalid pip_id format
         meta:
-          id: req_df5c9ac89325424787fc6abbccf8de09
-          created: 1785155876160
-          modified: 1785155876160
+          id: req_c06b2404de5c4c64823db4cb4467121b
+          created: 1785509371503
+          modified: 1785509371503
           isPrivate: false
           description: Expects 400. pip_id must match canonical uppercase pattern.
-          sortKey: -1785155876160
+          sortKey: -1785509371503
         method: GET
         parameters:
           - name: analysis_var
@@ -1116,12 +1098,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - too many pip_id values
         meta:
-          id: req_3ab6fee3df594865b04c80105e0cb03c
-          created: 1785155876161
-          modified: 1785155876161
+          id: req_4f10dc18c7ef466dbe24903c034c2f1d
+          created: 1785509371504
+          modified: 1785509371504
           isPrivate: false
           description: Expects 400. More than 15 pip_id values are rejected.
-          sortKey: -1785155876161
+          sortKey: -1785509371504
         method: GET
         parameters:
           - name: analysis_var
@@ -1189,12 +1171,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - ppp zero
         meta:
-          id: req_6056aca122234834bd6d59e40b498572
-          created: 1785155876163
-          modified: 1785155876163
+          id: req_1f3f3fa23fc54047b5ce8f54b457d6a5
+          created: 1785509371506
+          modified: 1785509371506
           isPrivate: false
           description: Expects 400. ppp must be positive.
-          sortKey: -1785155876163
+          sortKey: -1785509371506
         method: GET
         parameters:
           - name: analysis_var
@@ -1220,12 +1202,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - ppp negative
         meta:
-          id: req_99794413e0584d7fa85667bbc23ddf1a
-          created: 1785155876164
-          modified: 1785155876164
+          id: req_33df806b54f949eda6aa29fd87917e1e
+          created: 1785509371507
+          modified: 1785509371507
           isPrivate: false
           description: Expects 400. ppp must be positive.
-          sortKey: -1785155876164
+          sortKey: -1785509371507
         method: GET
         parameters:
           - name: analysis_var
@@ -1251,12 +1233,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - repeated ppp values
         meta:
-          id: req_88b8248b8d7542b998828e21ea503ef9
-          created: 1785155876165
-          modified: 1785155876165
+          id: req_66339427ea0846ae9077372109d35c65
+          created: 1785509371509
+          modified: 1785509371509
           isPrivate: false
           description: Expects 400. ppp must be a scalar.
-          sortKey: -1785155876165
+          sortKey: -1785509371509
         method: GET
         parameters:
           - name: analysis_var
@@ -1285,12 +1267,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - pop_share_threshold non-numeric
         meta:
-          id: req_0ca38e229565463086aef7bfda5f2917
-          created: 1785155876166
-          modified: 1785155876166
+          id: req_71e5fb2b0deb472385f692420666be74
+          created: 1785509371510
+          modified: 1785509371510
           isPrivate: false
           description: Expects 400. pop_share_threshold must be numeric in (0,1).
-          sortKey: -1785155876166
+          sortKey: -1785509371510
         method: GET
         parameters:
           - name: analysis_var
@@ -1316,12 +1298,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - pop_share_threshold out of range
         meta:
-          id: req_387d328d4abf4635b9cde194b0694490
-          created: 1785155876167
-          modified: 1785155876167
+          id: req_a2fa4df38ebc42dab3169a590db446be
+          created: 1785509371511
+          modified: 1785509371511
           isPrivate: false
           description: Expects 400. pop_share_threshold must be strictly between 0 and 1.
-          sortKey: -1785155876167
+          sortKey: -1785509371511
         method: GET
         parameters:
           - name: analysis_var
@@ -1347,12 +1329,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - malformed filter_base JSON
         meta:
-          id: req_06304f6430624e4f8343e76a1b225df7
-          created: 1785155876168
-          modified: 1785155876168
+          id: req_a526b81f07dd43efa97a95a6dab27b8e
+          created: 1785509371512
+          modified: 1785509371512
           isPrivate: false
           description: Expects 422. filter_base JSON parsing fails in handler.
-          sortKey: -1785155876168
+          sortKey: -1785509371512
         method: GET
         parameters:
           - name: analysis_var
@@ -1378,12 +1360,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: ERR - table unknown release
         meta:
-          id: req_136a81bde7e44d46baf5c33da141a3a9
-          created: 1785155876168
-          modified: 1785155876168
+          id: req_41675b4558984218a19bbf068795c5a3
+          created: 1785509371513
+          modified: 1785509371513
           isPrivate: false
           description: Expects 422. resolve_release rejects unknown release.
-          sortKey: -1785155876168
+          sortKey: -1785509371513
         method: GET
         parameters:
           - name: analysis_var
@@ -1409,12 +1391,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: POST /table - missing analysis_var
         meta:
-          id: req_c102b23ad3be4f14a6542b6c532bd554
-          created: 1785155876169
-          modified: 1785155876169
+          id: req_6f33861caf28413887b3d723679c0e7c
+          created: 1785509371514
+          modified: 1785509371514
           isPrivate: false
           description: Expects 400. analysis_var required in POST body.
-          sortKey: -1785155876169
+          sortKey: -1785509371514
         method: POST
         body:
           mimeType: application/json
@@ -1437,12 +1419,12 @@ collection:
       - url: "{{ _.base_url }}/table"
         name: POST /table - malformed JSON
         meta:
-          id: req_24cb8076d8dd402f911ce1ad71ec6201
-          created: 1785155876170
-          modified: 1785155876170
+          id: req_f1448593e03f4d21bc760da1d88242fa
+          created: 1785509371516
+          modified: 1785509371516
           isPrivate: false
           description: Expects 400. Invalid JSON body should fail request parsing.
-          sortKey: -1785155876170
+          sortKey: -1785509371516
         method: POST
         body:
           mimeType: application/json
@@ -1465,21 +1447,21 @@ collection:
           rebuildPath: true
   - name: Catalogue - Error Cases
     meta:
-      id: fld_70e779272a2b43c88ab70e7b4cc92f6c
-      created: 1785155876099
-      modified: 1785155876099
-      sortKey: -1785155876099
+      id: fld_32ce9a9080b249248659e152928892bb
+      created: 1785509371449
+      modified: 1785509371449
+      sortKey: -1785509371449
       description: ""
     children:
       - url: "{{ _.base_url }}/surveys"
         name: ERR - /surveys unknown release
         meta:
-          id: req_58976bb2ac3f444ba3998cb9ffcc5ec0
-          created: 1785155876171
-          modified: 1785155876171
+          id: req_ae167a1411fa49d3869a50813f12382c
+          created: 1785509371517
+          modified: 1785509371517
           isPrivate: false
           description: Expects 422. resolve_release rejects unknown release.
-          sortKey: -1785155876171
+          sortKey: -1785509371517
         method: GET
         parameters:
           - name: release
@@ -1496,12 +1478,12 @@ collection:
       - url: "{{ _.base_url }}/surveys-ui"
         name: ERR - /surveys-ui unknown release
         meta:
-          id: req_0be704780b794d2cbe9451b69e5ae893
-          created: 1785155876172
-          modified: 1785155876172
+          id: req_e077b2ca8bce4267ab3fe382f157e40e
+          created: 1785509371518
+          modified: 1785509371518
           isPrivate: false
           description: Expects 422. resolve_release rejects unknown release.
-          sortKey: -1785155876172
+          sortKey: -1785509371518
         method: GET
         parameters:
           - name: release
@@ -1518,12 +1500,12 @@ collection:
       - url: "{{ _.base_url }}/countries"
         name: ERR - /countries unknown release
         meta:
-          id: req_8e176e2bb2524bc29268f7300c936546
-          created: 1785155876173
-          modified: 1785155876173
+          id: req_7f9a76e869c64997ba5d1e2309792e5c
+          created: 1785509371519
+          modified: 1785509371519
           isPrivate: false
           description: Expects 422. resolve_release rejects unknown release.
-          sortKey: -1785155876173
+          sortKey: -1785509371519
         method: GET
         parameters:
           - name: release
@@ -1540,12 +1522,12 @@ collection:
       - url: "{{ _.base_url }}/regions"
         name: ERR - /regions unknown release
         meta:
-          id: req_6439380d814d48279178a3f0050e6a99
-          created: 1785155876174
-          modified: 1785155876174
+          id: req_40fcf6e79fe44318adce05a6eb2b08aa
+          created: 1785509371521
+          modified: 1785509371521
           isPrivate: false
           description: Expects 422. resolve_release rejects unknown release.
-          sortKey: -1785155876174
+          sortKey: -1785509371521
         method: GET
         parameters:
           - name: release
@@ -1562,12 +1544,12 @@ collection:
       - url: "{{ _.base_url }}/statistics"
         name: ERR - /statistics unknown release
         meta:
-          id: req_544cac5ac75e4a89bbb1dc446a15f08b
-          created: 1785155876175
-          modified: 1785155876175
+          id: req_d5b26ae54b8d4436863a8f047ac70f4f
+          created: 1785509371522
+          modified: 1785509371522
           isPrivate: false
           description: Expects 422. resolve_release rejects unknown release.
-          sortKey: -1785155876175
+          sortKey: -1785509371522
         method: GET
         parameters:
           - name: release
@@ -1584,12 +1566,12 @@ collection:
       - url: "{{ _.base_url }}/analysis-variables"
         name: ERR - /analysis-variables unknown release
         meta:
-          id: req_76b37e31ca5a480894515e8bb8f92a20
-          created: 1785155876176
-          modified: 1785155876176
+          id: req_9d65cc9b1cb546f5ab8ceaf26de0b1bc
+          created: 1785509371523
+          modified: 1785509371523
           isPrivate: false
           description: Expects 422. resolve_release rejects unknown release.
-          sortKey: -1785155876176
+          sortKey: -1785509371523
         method: GET
         parameters:
           - name: release
@@ -1606,12 +1588,12 @@ collection:
       - url: "{{ _.base_url }}/categories"
         name: ERR - /categories unknown release
         meta:
-          id: req_59c36d3ebc6240ca8560a4c9c270054c
-          created: 1785155876177
-          modified: 1785155876177
+          id: req_dd86d439b26541a09221d89b98bfefa1
+          created: 1785509371524
+          modified: 1785509371524
           isPrivate: false
           description: Expects 422. resolve_release rejects unknown release.
-          sortKey: -1785155876177
+          sortKey: -1785509371524
         method: GET
         parameters:
           - name: release
@@ -1628,16 +1610,1051 @@ collection:
       - url: "{{ _.base_url }}/covariates"
         name: ERR - /covariates unknown release
         meta:
-          id: req_f3a132ee09ba4d229b06ebe3f00fbb41
-          created: 1785155876178
-          modified: 1785155876178
+          id: req_e8d0eb1adc784fbab488becc6db97a9f
+          created: 1785509371525
+          modified: 1785509371525
           isPrivate: false
           description: Expects 422. resolve_release rejects unknown release.
-          sortKey: -1785155876178
+          sortKey: -1785509371525
         method: GET
         parameters:
           - name: release
             value: NOT_A_RELEASE
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Session Storage
+    meta:
+      id: fld_c38f9dfd91554040a505c9ff509c9ddc
+      created: 1785509371450
+      modified: 1785509371450
+      sortKey: -1785509371450
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/session/surveys"
+        name: POST /session/surveys - create session
+        meta:
+          id: req_ed80c7c54c804b1382de71781c89d975
+          created: 1785509371467
+          modified: 1785509371467
+          isPrivate: false
+          description: Creates a new session with pip_id values and returns session_id for
+            recovery.
+          sortKey: -1785509371467
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "pip_id": ["{{ _.pip_id }}", "{{ _.pip_id_2 }}"]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/session/{{ _.session_id }}/surveys"
+        name: GET /session/<id>/surveys - retrieve session
+        meta:
+          id: req_2828ef9e9d0246b28cbd4b1213c28089
+          created: 1785509371469
+          modified: 1785509812559
+          isPrivate: false
+          description: Retrieves stored pip_id values by session_id. Run POST request
+            first to set session_id env var.
+          sortKey: -1785509371469
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/session/surveys"
+        name: POST /session/surveys - missing pip_id (400)
+        meta:
+          id: req_18005ecbf7d34fdfae9014e83850d7dd
+          created: 1785509371470
+          modified: 1785509371470
+          isPrivate: false
+          description: Expects 400. pip_id is required and cannot be empty.
+          sortKey: -1785509371470
+        method: POST
+        body:
+          mimeType: application/json
+          text: "{}"
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/session/surveys"
+        name: POST /session/surveys - invalid pip_id format (400)
+        meta:
+          id: req_87359e642da24f37bf8f384e4eb7e101
+          created: 1785509371471
+          modified: 1785509371471
+          isPrivate: false
+          description: Expects 400. pip_id must match pattern CCC_YYYY_*.
+          sortKey: -1785509371471
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "pip_id": ["invalid_format"]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/session/nonexistent123/surveys"
+        name: GET /session/<id>/surveys - unknown session (404)
+        meta:
+          id: req_44ed64552b80471ba3ba96e4bf19796b
+          created: 1785509371472
+          modified: 1785509371472
+          isPrivate: false
+          description: Expects 404. Nonexistent or expired session returns not found.
+          sortKey: -1785509371472
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/session/surveys"
+        name: POST /session/surveys - roundtrip test (5 surveys)
+        meta:
+          id: req_4e46e281c1554ad4aaa98a08c1598a4d
+          created: 1785509371473
+          modified: 1785509371473
+          isPrivate: false
+          description: "Full workflow test: create session with 5 surveys, verify stored
+            correctly."
+          sortKey: -1785509371473
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "pip_id": [
+                "{{ _.pip_id }}",
+                "{{ _.pip_id_2 }}",
+                "{{ _.pip_id_3 }}",
+                "{{ _.pip_id_4 }}",
+                "{{ _.pip_id_5 }}"
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Real Production - Happy Paths
+    meta:
+      id: fld_e836916247994ed494ca561c471f76bc
+      created: 1785509371526
+      modified: 1785509371526
+      sortKey: -1785509371526
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - single survey with gender+area
+        meta:
+          id: req_ff7ea829a0e1452b8b483733098a5b23
+          created: 1785509371535
+          modified: 1785509371535
+          isPrivate: false
+          description: "Happy path: real production survey with common dimension
+            breakdown. Validates response structure and data quality."
+          sortKey: -1785509371535
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: measures
+            value: gini
+            disabled: false
+          - name: by
+            value: gender
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: pop_share_threshold
+            value: "{{ _.pop_share_threshold }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - 5 surveys batch
+        meta:
+          id: req_5bea853bfcc248308468bb732b081505
+          created: 1785509371536
+          modified: 1785509371536
+          isPrivate: false
+          description: "Medium batch: 5 real surveys to test orchestration and consistent
+            envelope."
+          sortKey: -1785509371536
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_2 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_3 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_4 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_5 }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - 15 surveys batch (max limit)
+        meta:
+          id: req_6719ef747a0f4bd3a824d327543fca2f
+          created: 1785509371537
+          modified: 1785509371537
+          isPrivate: false
+          description: "Max batch: all 15 surveys at once. Critical performance test for
+            UI scenarios."
+          sortKey: -1785509371537
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_2 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_3 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_4 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_5 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_6 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_7 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_8 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_9 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_10 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_11 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_12 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_13 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_14 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_15 }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - poverty analysis with poverty_line
+        meta:
+          id: req_5ba9b4ace69e45aa87c6c58999902d0a
+          created: 1785509371540
+          modified: 1785509371540
+          isPrivate: false
+          description: Poverty measures with real poverty line value.
+          sortKey: -1785509371540
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: pov_status
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: headcount
+            disabled: false
+          - name: measures
+            value: poverty_gap
+            disabled: false
+          - name: measures
+            value: severity
+            disabled: false
+          - name: poverty_line
+            value: "{{ _.poverty_line }}"
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Real Production - Dimension Mismatches
+    meta:
+      id: fld_8551ec5b1c0547c6aff19d33e95c35e9
+      created: 1785509371528
+      modified: 1785509371528
+      sortKey: -1785509371528
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - request area for ALB (missing area)
+        meta:
+          id: req_4c44ba8707a0437fb1a8a79c84efcb32
+          created: 1785509371541
+          modified: 1785509371541
+          isPrivate: false
+          description: ALB_2016_HBS_CON_ALL lacks 'area' dimension. Should handle
+            gracefully (422 or empty result).
+          sortKey: -1785509371541
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_6 }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - mixed surveys (some have area, some don't)
+        meta:
+          id: req_4409205c14e848fda25d3411c6b01e60
+          created: 1785509371542
+          modified: 1785509371542
+          isPrivate: false
+          description: Mix pip_id and pip_id_6 (ALB without area). Tests heterogeneous
+            dimension handling.
+          sortKey: -1785509371542
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_6 }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Real Production - Analysis Variable Types
+    meta:
+      id: fld_e7d976a390b543d2a5db002d4b73c12e
+      created: 1785509371530
+      modified: 1785509371530
+      sortKey: -1785509371530
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - binary analysis_var shares
+        meta:
+          id: req_31f774be49f0493692f86b040e0b48a0
+          created: 1785509371544
+          modified: 1785509371544
+          isPrivate: false
+          description: Use gender as analysis_var with share measures.
+          sortKey: -1785509371544
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: gender
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: pop_share
+            disabled: false
+          - name: measures
+            value: target_survey_share
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - continuous covariate (age summary stats)
+        meta:
+          id: req_f70b7dc4b1594247b5b540e539609266
+          created: 1785509371545
+          modified: 1785509371545
+          isPrivate: false
+          description: Use age as analysis_var with summary statistics.
+          sortKey: -1785509371545
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: age
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: measures
+            value: median
+            disabled: false
+          - name: measures
+            value: sd
+            disabled: false
+          - name: by
+            value: gender
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: GET /table - pov_status with multiple poverty lines
+        meta:
+          id: req_399cc5024563442f844f687fe22e7057
+          created: 1785509371547
+          modified: 1785509371547
+          isPrivate: false
+          description: Run same survey with 3 different poverty lines to test consistency.
+          sortKey: -1785509371547
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: pov_status
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: headcount
+            disabled: false
+          - name: poverty_line
+            value: "2.15"
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Real Production - Performance Benchmarks
+    meta:
+      id: fld_2dfd9bdf11c54dccb0f7911a92f6a569
+      created: 1785509371531
+      modified: 1785509371531
+      sortKey: -1785509371531
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/table"
+        name: PERF - 1 survey baseline
+        meta:
+          id: req_89861e87f10b405b90689b4887fadc4e
+          created: 1785509371548
+          modified: 1785509371548
+          isPrivate: false
+          description: "Performance baseline: single survey, no disaggregation."
+          sortKey: -1785509371548
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: PERF - 5 surveys with 2 dimensions
+        meta:
+          id: req_5c91551a1a214eca86f3e7d0d0f69afb
+          created: 1785509371549
+          modified: 1785509371549
+          isPrivate: false
+          description: "Medium complexity: 5 surveys × 2 dimensions."
+          sortKey: -1785509371549
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_2 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_3 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_4 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_5 }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: measures
+            value: gini
+            disabled: false
+          - name: by
+            value: gender
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: PERF - 15 surveys with 4 dimensions (worst case)
+        meta:
+          id: req_864a5c783b7d4f8cacf4560efd0c85b2
+          created: 1785509371550
+          modified: 1785510307909
+          isPrivate: false
+          description: "Maximum complexity: 15 surveys × 4 dimensions. Critical SLA test."
+          sortKey: -1785509371550
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_2 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_3 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_4 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_5 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_7 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_8 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_9 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_10 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_11 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_12 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_13 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_14 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id_15 }}"
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: by
+            value: gender
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: by
+            value: educat4
+            disabled: false
+          - name: by
+            value: age_group
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Real Production - Edge Cases
+    meta:
+      id: fld_a4a30d02c88e46a4bbd65554f52e6f41
+      created: 1785509371533
+      modified: 1785509371533
+      sortKey: -1785509371533
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/table"
+        name: EDGE - very small poverty_line (0.01)
+        meta:
+          id: req_ae19cdc4b9c54d7f884c982cd36c5d12
+          created: 1785509371551
+          modified: 1785509371551
+          isPrivate: false
+          description: "Boundary case: near-zero poverty line."
+          sortKey: -1785509371551
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: pov_status
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: headcount
+            disabled: false
+          - name: poverty_line
+            value: "0.01"
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: EDGE - very large poverty_line (100)
+        meta:
+          id: req_9f7fef6ceced4d19bf288da1fef1bf2f
+          created: 1785509371552
+          modified: 1785509371552
+          isPrivate: false
+          description: "Boundary case: poverty line above all welfare values."
+          sortKey: -1785509371552
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: pov_status
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: headcount
+            disabled: false
+          - name: poverty_line
+            value: "100"
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: EDGE - pop_share_threshold at boundary (0.01)
+        meta:
+          id: req_8e7138d813be4dfeacaef3a947503732
+          created: 1785509371554
+          modified: 1785509371554
+          isPrivate: false
+          description: Test suppression at exact threshold value.
+          sortKey: -1785509371554
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: by
+            value: gender
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: by
+            value: educat4
+            disabled: false
+          - name: pop_share_threshold
+            value: "0.01"
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: EDGE - all cells suppressed scenario
+        meta:
+          id: req_935a3c544744416d8da3a8a859f586c3
+          created: 1785509371555
+          modified: 1785510274811
+          isPrivate: false
+          description: High threshold to trigger suppression of all cells.
+          sortKey: -1785509371555
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: by
+            value: gender
+            disabled: false
+          - name: by
+            value: area
+            disabled: false
+          - name: by
+            value: educat4
+            disabled: false
+          - name: by
+            value: age_group
+            disabled: false
+          - name: pop_share_threshold
+            value: "0.5"
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: EDGE - filter_base with multiple categories
+        meta:
+          id: req_0d69fa9d30624b6f973aec35092f28c4
+          created: 1785509371556
+          modified: 1785510246595
+          isPrivate: false
+          description: "Complex filter: multiple variables with multiple subcategories."
+          sortKey: -1785509371556
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: filter_base
+            value: '{"educat4":[2,3],"gender":[1]}'
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/table"
+        name: EDGE - filter_base excluding all subcategories
+        meta:
+          id: req_d3595cef80484bcfbc60091c27f1aa79
+          created: 1785509371557
+          modified: 1785509371557
+          isPrivate: false
+          description: "Edge case: filter that excludes all observations (should return
+            empty or error)."
+          sortKey: -1785509371557
+        method: GET
+        parameters:
+          - name: analysis_var
+            value: welfare
+            disabled: false
+          - name: pip_id
+            value: "{{ _.pip_id }}"
+            disabled: false
+          - name: measures
+            value: mean
+            disabled: false
+          - name: filter_base
+            value: '{"gender":[]}'
+            disabled: false
+          - name: ppp
+            value: "{{ _.ppp }}"
+            disabled: false
+          - name: release
+            value: "{{ _.release }}"
             disabled: false
         settings:
           renderRequestBody: true
